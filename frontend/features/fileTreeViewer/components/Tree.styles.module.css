@@ -1,0 +1,38 @@
+.tree {
+  padding-left: 16px;
+}
+
+.folder {
+  cursor: pointer;
+  position: relative;
+}
+
+.folder .folderControl {
+  position: absolute;
+  font-size: 24px;
+  left: -16px;
+}
+
+.folder.open .folderControl::before {
+  content: "\2212";
+}
+
+.folder.collapsed .folderControl::before {
+  content: "\002B";
+}
+
+.labelContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.name {
+  padding: 4px 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.fileName {
+  color: #7b7b7b;
+}
